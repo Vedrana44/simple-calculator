@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    background-color: #F3E1DD;
+    font-family: 'Boogaloo', cursive;
+    color: #1F0318;
+}
+
+header{
+    padding: 25px;
+    text-align: center;
+}
+
+main{
+    max-width: 400px;
+    margin: 0 auto;
+    canvas{
+        background-color: #CC7178;
+    }
+    #buttonsContainer{
+        display: flex;
+        flex-flow: row wrap;
+        height: 300px;
+        margin-top: 20px;
+        button{
+            width: 24%;
+            border: none;
+            margin: 2px;
+            font-size: 24px;
+            background-color: #89023E;
+            font-family: 'Boogaloo', cursive;
+            color: #F3E1DD;
+            border-radius: 6px;
+            cursor: pointer;
+            &.number{
+                background-color: #9DA3A4;
+                color: #1F0318;
+                &:hover{
+                    background-color: darken(#9DA3A4, 20%);
+                }
+            }
+            &.ac{
+                width: 50%;
+                background-color: #C9C5BA;
+                color: #1F0318;
+            }
+            &.equals{
+                background-color: #77995b;
+            }
+        }
+    }
+    #animation{
+        position: fixed;
+        top: -20px;
+        left: 300px;
+        animation: fallingNum 10s ease-in-out infinite;
+    }
+    @keyframes fallingNum {
+        10%{
+            transform: translateY(0);
+          }
+          15%, 30%{
+            transform: translateY(400px);
+          }
+          35%, 50%{
+            transform: translateY(1200px);
+          }
+          75%, 90%{
+            transform: translateY(0);
+          }
+    }
+}
+
+footer{
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+    padding: 25px;
+    margin-top: 50px;
+}
+
