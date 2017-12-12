@@ -1,1 +1,1 @@
-# Simple calculator using HTML5 (canvas), CSS3 and JavaScript.
+Simple calculator using HTML5 (canvas), CSS3 and JavaScript.
